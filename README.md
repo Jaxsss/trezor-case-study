@@ -94,6 +94,13 @@ WHERE stock_status = 'Low Stock';
 3. **Transform**: SQL scripts transform the data into gold layer views
 4. **Analyze**: Business-ready views provide insights on inventory status
 
+## Database
+- Postgresql
+- there are three layers
+  - bronze - raw data
+  - silver - transformed data
+  - gold - business ready views
+
 ## Data Quality
 - I noticed some data quality issues
   - first was that quantity_on_hand was higher than quantity_available which I dont think is correct, so if that was the case I set the column to quantity_available
