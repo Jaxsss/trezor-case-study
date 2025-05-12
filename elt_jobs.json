@@ -1,0 +1,12 @@
+{
+  "products": {
+    "keboola_table_id": "in.c-interview_de.products",
+    "postgres_schema_name": "bronze",
+    "postgres_table_name": "products"
+  },
+  "products_inventory_locations": {
+    "keboola_table_id": "in.c-interview_de.products_inventory_locations",
+    "postgres_schema_name": "bronze",
+    "postgres_table_name": "products_inventory_locations"
+  }
+}
