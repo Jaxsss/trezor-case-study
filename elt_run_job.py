@@ -15,6 +15,8 @@ def run_job(elt_job_list=None):
             print(f"Job '{job}' not found in configuration.")
             break
 
+        print(f"========\nRUNNING JOB '{job}'...\n========")
+
         keboola_table_id = job_config["keboola_table_id"]
         postgres_schema_name = job_config["postgres_schema_name"]
         postgres_table_name = job_config["postgres_table_name"]
@@ -29,6 +31,8 @@ def run_job(elt_job_list=None):
         data_loader.insert_data_into_postgres(
             df, postgres_table_name, postgres_schema_name
         )
+
+        print(f"========\nJOB '{job}' COMPLETED.\n========\n")
 
 
 if __name__ == "__main__":
