@@ -80,10 +80,10 @@ python elt_daily_load.py
 After loading the data, you can analyze it using the gold layer views:
 ```sql
 -- View total stock per product
-SELECT * FROM gold.product_status_summary;
+SELECT * FROM gold.products_stat_summary;
 
 -- Check low stock products
-SELECT * FROM gold.product_status_summary 
+SELECT * FROM gold.products_stat_summary 
 WHERE stock_status = 'Low Stock';
 ```
 
